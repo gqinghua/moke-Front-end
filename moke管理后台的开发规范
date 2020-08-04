@@ -1,0 +1,18 @@
+//注意个模块要符合规范
+模块对api,如有要个自定义,在router下合并,这是规范,不要乱写乱七八招的
+上传到github
+
+
+拷贝复制黏贴所有的页面  ,把add和update的</template>里的标签修改一下,修改数据库的sys_role_menu,或者sys_role_permission里添加字段
+死路由字段,会自动加载权限,在router里把对应的页面添加上来,取好名字,和数据库的sys_permission的字段uri字段匹配,
+在api里把后台的字段对应一下,
+
+
+
+1,拷贝几个模板,修改好名称
+2,在router里对应一下,取好名字
+3修改数据库,sys_role_menu,或者sys_role_permission uri与名字对应,
+4,页面会出现对应的页面信息,修改index页面,钩子方法,和路由信息,添加.页面显示
+ADD和update要和router下地址要配对
+5,跳转页面的</template>别忘了修改,
+6,vue钩子参数 ,methods修改 ,页面显示也要修改,跳转修改
